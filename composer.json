@@ -1,0 +1,41 @@
+{
+    "name": "harmonyio/http-client",
+    "description": "Asynchronous http client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "email": "info@pieterhordijk.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "amphp/amp": "^2.0",
+        "amphp/artax": "^3.0",
+        "harmonyio/cache": "dev-master"
+    },
+    "require-dev": {
+        "harmonyio/php-codesniffer-ruleset": "dev-master",
+        "harmonyio/phpunit-extension": "^0.1",
+        "maglnet/composer-require-checker": "^1.1",
+        "phpunit/phpunit": "^7.4",
+        "slevomat/coding-standard": "^4.8",
+        "squizlabs/php_codesniffer": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "HarmonyIO\\HttpClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HarmonyIO\\HttpClientTest\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
