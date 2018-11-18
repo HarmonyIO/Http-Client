@@ -13,6 +13,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.2",
+        "ext-json": "*",
         "amphp/amp": "^2.0",
         "amphp/artax": "^3.0",
         "harmonyio/cache": "dev-master"

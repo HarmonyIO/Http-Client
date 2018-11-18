@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e56132b0e4aaa4c9aa7a0023412af2dd",
+    "content-hash": "c4b67a5d193805f0c3fd5731f51de23d",
     "packages": [
         {
             "name": "amphp/amp",
@@ -561,6 +561,58 @@
             "time": "2018-11-09T00:02:00+00:00"
         },
         {
+            "name": "amphp/redis",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/redis.git",
+                "reference": "bf4155dd431c9a37631ac3597b71567ed4a41fa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/redis/zipball/bf4155dd431c9a37631ac3597b71567ed4a41fa2",
+                "reference": "bf4155dd431c9a37631ac3597b71567ed4a41fa2",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/amp": "^2",
+                "amphp/cache": "^1",
+                "amphp/socket": "^0.10",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "amphp/phpunit-util": "^1",
+                "friendsofphp/php-cs-fixer": "^2.3",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Amp\\Redis\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                }
+            ],
+            "description": "A non-blocking Redis client for Amp.",
+            "homepage": "https://github.com/amphp/redis",
+            "keywords": [
+                "amp",
+                "amphp",
+                "async",
+                "client",
+                "redis"
+            ],
+            "time": "2017-11-17T14:09:59+00:00"
+        },
+        {
             "name": "amphp/socket",
             "version": "v0.10.11",
             "source": {
@@ -807,6 +859,52 @@
                 "dns"
             ],
             "time": "2018-01-10T15:56:17+00:00"
+        },
+        {
+            "name": "harmonyio/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HarmonyIO/Cache.git",
+                "reference": "0e4d3ee35d28f5fce9e3591303eefea0df2d9974"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/0e4d3ee35d28f5fce9e3591303eefea0df2d9974",
+                "reference": "0e4d3ee35d28f5fce9e3591303eefea0df2d9974",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/amp": "^2.0",
+                "amphp/redis": "^0.3.3",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "harmonyio/php-codesniffer-ruleset": "dev-master",
+                "harmonyio/phpunit-extension": "^0.1",
+                "maglnet/composer-require-checker": "^1.1",
+                "phpunit/phpunit": "^7.4",
+                "slevomat/coding-standard": "^4.8",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HarmonyIO\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Hordijk",
+                    "email": "info@pieterhordijk.com"
+                }
+            ],
+            "description": "Asynchronous caching library",
+            "time": "2018-11-17T16:40:35+00:00"
         },
         {
             "name": "kelunik/certificate",
