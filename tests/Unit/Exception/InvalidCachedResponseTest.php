@@ -2,6 +2,7 @@
 
 namespace HarmonyIO\HttpClientTest\Unit\Exception;
 
+use HarmonyIO\HttpClient\Exception\InvalidCachedResponse;
 use HarmonyIO\PHPUnitExtension\TestCase;
 
 class InvalidCachedResponseTest extends TestCase
@@ -11,6 +12,6 @@ class InvalidCachedResponseTest extends TestCase
         $this->expectException(InvalidCachedResponse::class);
         $this->expectExceptionMessage('The cached response is in an unexpected format.');
 
-        throw new InvalidBody(1);
+        throw new InvalidCachedResponse();
     }
 }
