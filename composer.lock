@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4b67a5d193805f0c3fd5731f51de23d",
+    "content-hash": "1f395b435a2b3dc3b03433b70296bf09",
     "packages": [
         {
             "name": "amphp/amp",
@@ -866,12 +866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/Cache.git",
-                "reference": "0e4d3ee35d28f5fce9e3591303eefea0df2d9974"
+                "reference": "c633bc0d7b5da9f72258af165ad300ffb47f7399"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/0e4d3ee35d28f5fce9e3591303eefea0df2d9974",
-                "reference": "0e4d3ee35d28f5fce9e3591303eefea0df2d9974",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/c633bc0d7b5da9f72258af165ad300ffb47f7399",
+                "reference": "c633bc0d7b5da9f72258af165ad300ffb47f7399",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +904,7 @@
                 }
             ],
             "description": "Asynchronous caching library",
-            "time": "2018-11-17T16:40:35+00:00"
+            "time": "2018-11-17T16:43:28+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -2881,7 +2881,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
