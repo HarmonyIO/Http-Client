@@ -866,12 +866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/Cache.git",
-                "reference": "c633bc0d7b5da9f72258af165ad300ffb47f7399"
+                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/c633bc0d7b5da9f72258af165ad300ffb47f7399",
-                "reference": "c633bc0d7b5da9f72258af165ad300ffb47f7399",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/0ec37f756a3c435491317b4d40be33fc4bfef467",
+                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467",
                 "shasum": ""
             },
             "require": {
@@ -885,7 +885,7 @@
                 "maglnet/composer-require-checker": "^1.1",
                 "phpunit/phpunit": "^7.4",
                 "slevomat/coding-standard": "^4.8",
-                "squizlabs/php_codesniffer": "^3.3"
+                "squizlabs/php_codesniffer": "^3.3.1"
             },
             "type": "library",
             "autoload": {
@@ -904,7 +904,7 @@
                 }
             ],
             "description": "Asynchronous caching library",
-            "time": "2018-11-17T16:43:28+00:00"
+            "time": "2018-11-19T16:39:52+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -1017,12 +1017,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/PHP-CodeSniffer-Ruleset.git",
-                "reference": "9e9329473f6cf000cb21bbca76b5498537a0753e"
+                "reference": "d3678daabd50b81e88cacda3053f1e22f61a0f1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/PHP-CodeSniffer-Ruleset/zipball/9e9329473f6cf000cb21bbca76b5498537a0753e",
-                "reference": "9e9329473f6cf000cb21bbca76b5498537a0753e",
+                "url": "https://api.github.com/repos/HarmonyIO/PHP-CodeSniffer-Ruleset/zipball/d3678daabd50b81e88cacda3053f1e22f61a0f1b",
+                "reference": "d3678daabd50b81e88cacda3053f1e22f61a0f1b",
                 "shasum": ""
             },
             "require": {
@@ -1041,7 +1041,7 @@
                 }
             ],
             "description": "HarmonyIO coding standard",
-            "time": "2018-11-16T15:22:42+00:00"
+            "time": "2018-11-19T19:25:34+00:00"
         },
         {
             "name": "harmonyio/phpunit-extension",
