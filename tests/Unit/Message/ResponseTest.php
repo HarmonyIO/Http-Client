@@ -4,6 +4,7 @@ namespace HarmonyIO\HttpClientTest\Unit\Message;
 
 use Amp\Artax\Response as ArtaxResponse;
 use HarmonyIO\Cache\CacheableResponse;
+use HarmonyIO\HttpClient\Exception\InvalidCachedResponse;
 use HarmonyIO\HttpClient\Message\Response;
 use HarmonyIO\PHPUnitExtension\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -104,14 +105,14 @@ class ResponseTest extends TestCase
     public function testSerialize(): void
     {
         $this->assertSame(
-            'C:37:"HarmonyIO\HttpClient\Message\Response":126:{{"protocolVersion":"1.0","numericalStatusCode":200,"textualStatusCode":"OK","headers":{"foo":["bar","baz"]},"body":"The body"}}',
+            require TEST_FIXTURE_DIR . '/Message/serialized-response.php',
             serialize($this->response)
         );
     }
 
     public function testUnserialize(): void
     {
-        $response = unserialize('C:37:"HarmonyIO\HttpClient\Message\Response":126:{{"protocolVersion":"1.0","numericalStatusCode":200,"textualStatusCode":"OK","headers":{"foo":["bar","baz"]},"body":"The body"}}');
+        $response = unserialize(require TEST_FIXTURE_DIR . '/Message/serialized-response.php');
 
         $this->assertSame('1.0', $response->getProtocolVersion());
         $this->assertSame(200, $response->getNumericalStatusCode());
@@ -119,5 +120,13 @@ class ResponseTest extends TestCase
         $this->assertTrue($response->hasHeader('foo'));
         $this->assertSame(['bar', 'baz'], $response->getHeaderArray('foo'));
         $this->assertSame('The body', $response->getBody());
+    }
+
+    public function testUnserializeThrowsOnInvalidResponseFormat(): void
+    {
+        $this->expectException(InvalidCachedResponse::class);
+        $this->expectExceptionMessage('The cached response is in an unexpected format.');
+
+        $this->response->unserialize('foobar');
     }
 }

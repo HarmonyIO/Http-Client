@@ -38,7 +38,7 @@ class ArtaxClient implements Client
     private function makeCachingRequest(CachingRequest $request): Promise
     {
         return call(function () use ($request) {
-            if (!$this->cache->exists($request->getCachingKey())) {
+            if (!yield $this->cache->exists($request->getCachingKey())) {
                 /** @var Response $response */
                 $response = yield $this->makeRequest($request);
 
@@ -61,10 +61,10 @@ class ArtaxClient implements Client
     {
         return call(function () use ($request) {
             /** @var ArtaxResponse $response */
-            $artaxResponse = yield $this->artaxClient->request($request->getArtaxRequest());
-            $body          = yield $response->getBody();
+            $response = yield $this->artaxClient->request($request->getArtaxRequest());
+            $body     = yield $response->getBody();
 
-            return new Response($artaxResponse, $body);
+            return new Response($response, $body);
         });
     }
 }
