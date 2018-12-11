@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "amphp/amp",
-            "version": "v2.0.7",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/amp.git",
-                "reference": "d561cc9736bc18dd94a2fc9cdae98b616bd92c43"
+                "reference": "23b8bd2cfe2efeb7461640b355e8d856316323fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/amp/zipball/d561cc9736bc18dd94a2fc9cdae98b616bd92c43",
-                "reference": "d561cc9736bc18dd94a2fc9cdae98b616bd92c43",
+                "url": "https://api.github.com/repos/amphp/amp/zipball/23b8bd2cfe2efeb7461640b355e8d856316323fe",
+                "reference": "23b8bd2cfe2efeb7461640b355e8d856316323fe",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +80,7 @@
                 "non-blocking",
                 "promise"
             ],
-            "time": "2018-04-30T20:49:57+00:00"
+            "time": "2018-12-10T19:13:25+00:00"
         },
         {
             "name": "amphp/artax",
@@ -866,12 +866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/Cache.git",
-                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467"
+                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/0ec37f756a3c435491317b4d40be33fc4bfef467",
-                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/c7a1b1d99f917eac8a35c7556045bb520be92908",
+                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +904,7 @@
                 }
             ],
             "description": "Asynchronous caching library",
-            "time": "2018-11-19T16:39:52+00:00"
+            "time": "2018-12-03T09:49:30+00:00"
         },
         {
             "name": "kelunik/certificate",
