@@ -866,12 +866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/Cache.git",
-                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467"
+                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/0ec37f756a3c435491317b4d40be33fc4bfef467",
-                "reference": "0ec37f756a3c435491317b4d40be33fc4bfef467",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/c7a1b1d99f917eac8a35c7556045bb520be92908",
+                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +904,7 @@
                 }
             ],
             "description": "Asynchronous caching library",
-            "time": "2018-11-19T16:39:52+00:00"
+            "time": "2018-12-03T09:49:30+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -2512,16 +2512,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.3.2",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "6ad28354c04b364c3c71a34e4a18b629cc3b231e"
+                "reference": "379deb987e26c7cd103a7b387aea178baec96e48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6ad28354c04b364c3c71a34e4a18b629cc3b231e",
-                "reference": "6ad28354c04b364c3c71a34e4a18b629cc3b231e",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/379deb987e26c7cd103a7b387aea178baec96e48",
+                "reference": "379deb987e26c7cd103a7b387aea178baec96e48",
                 "shasum": ""
             },
             "require": {
@@ -2559,7 +2559,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-09-23T23:08:17+00:00"
+            "time": "2018-12-19T23:57:18+00:00"
         },
         {
             "name": "symfony/console",
