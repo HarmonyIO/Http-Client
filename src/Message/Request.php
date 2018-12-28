@@ -32,6 +32,7 @@ class Request
 
     /**
      * @param string|RequestBody $body
+     * @throws InvalidBody
      */
     public function setBody($body): Request
     {

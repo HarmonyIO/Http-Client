@@ -10,6 +10,7 @@ use Amp\ByteStream\Message;
 use Amp\Loop;
 use Amp\Success;
 use HarmonyIO\Cache\Cache;
+use HarmonyIO\Cache\Ttl;
 use HarmonyIO\HttpClient\Client\ArtaxClient;
 use HarmonyIO\HttpClient\Client\Client;
 use HarmonyIO\HttpClient\Message\CachingRequest;
@@ -26,7 +27,7 @@ class ArtaxClientTest extends TestCase
     /** @var MockObject|Cache */
     private $cache;
 
-    //phpcs:ignore SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint
+    // phpcs:ignore SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint
     public function setUp()
     {
         $this->artaxBaseClient = $this->createMock(ArtaxBaseClient::class);
@@ -133,7 +134,7 @@ class ArtaxClientTest extends TestCase
         $artaxClient = new ArtaxClient($this->artaxBaseClient, $this->cache);
 
         Loop::run(static function () use ($artaxClient) {
-            yield $artaxClient->request(new CachingRequest('Key', 10, 'https://example.com'));
+            yield $artaxClient->request(new CachingRequest('Key', new Ttl(10), 'https://example.com'));
         });
     }
 
@@ -190,8 +191,8 @@ class ArtaxClientTest extends TestCase
         $artaxClient = new ArtaxClient($this->artaxBaseClient, $this->cache);
 
         Loop::run(static function () use ($artaxClient) {
-            yield $artaxClient->request(new CachingRequest('Key', 10, 'https://example.com'));
-            yield $artaxClient->request(new CachingRequest('Key', 10, 'https://example.com'));
+            yield $artaxClient->request(new CachingRequest('Key', new Ttl(10), 'https://example.com'));
+            yield $artaxClient->request(new CachingRequest('Key', new Ttl(10), 'https://example.com'));
         });
     }
 
@@ -248,8 +249,8 @@ class ArtaxClientTest extends TestCase
         $artaxClient = new ArtaxClient($this->artaxBaseClient, $this->cache);
 
         Loop::run(static function () use ($artaxClient) {
-            yield $artaxClient->request(new CachingRequest('Key', 10, 'https://example.com'));
-            yield $artaxClient->request(new CachingRequest('Key', 10, 'https://example.com'));
+            yield $artaxClient->request(new CachingRequest('Key', new Ttl(10), 'https://example.com'));
+            yield $artaxClient->request(new CachingRequest('Key', new Ttl(10), 'https://example.com'));
         });
     }
 }
