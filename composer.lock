@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f395b435a2b3dc3b03433b70296bf09",
+    "content-hash": "0cc769953988b658426f276aaa92253b",
     "packages": [
         {
             "name": "amphp/amp",
@@ -144,16 +144,16 @@
         },
         {
             "name": "amphp/byte-stream",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/byte-stream.git",
-                "reference": "37b9ab16bb8f69c825c3c4e553fe00da73dd6926"
+                "reference": "6bbfcb6f47e92577e739586ba0c87e867be70a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/byte-stream/zipball/37b9ab16bb8f69c825c3c4e553fe00da73dd6926",
-                "reference": "37b9ab16bb8f69c825c3c4e553fe00da73dd6926",
+                "url": "https://api.github.com/repos/amphp/byte-stream/zipball/6bbfcb6f47e92577e739586ba0c87e867be70a23",
+                "reference": "6bbfcb6f47e92577e739586ba0c87e867be70a23",
                 "shasum": ""
             },
             "require": {
@@ -199,7 +199,7 @@
                 "non-blocking",
                 "stream"
             ],
-            "time": "2018-10-22T19:37:37+00:00"
+            "time": "2018-12-27T18:08:06+00:00"
         },
         {
             "name": "amphp/cache",
@@ -862,30 +862,32 @@
         },
         {
             "name": "harmonyio/cache",
-            "version": "dev-master",
+            "version": "v1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/Cache.git",
-                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908"
+                "reference": "61ded07e411d7911cc826f3ee756fcb9509b2455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/c7a1b1d99f917eac8a35c7556045bb520be92908",
-                "reference": "c7a1b1d99f917eac8a35c7556045bb520be92908",
+                "url": "https://api.github.com/repos/HarmonyIO/Cache/zipball/61ded07e411d7911cc826f3ee756fcb9509b2455",
+                "reference": "61ded07e411d7911cc826f3ee756fcb9509b2455",
                 "shasum": ""
             },
             "require": {
-                "amphp/amp": "^2.0",
+                "amphp/amp": "^2.1.1",
+                "amphp/cache": "^1.2",
                 "amphp/redis": "^0.3.3",
-                "php": "^7.2"
+                "amphp/uri": "^0.1.3",
+                "php": "^7.3"
             },
             "require-dev": {
-                "harmonyio/php-codesniffer-ruleset": "dev-master",
-                "harmonyio/phpunit-extension": "^0.1",
-                "maglnet/composer-require-checker": "^1.1",
-                "phpunit/phpunit": "^7.4",
-                "slevomat/coding-standard": "^4.8",
-                "squizlabs/php_codesniffer": "^3.3.1"
+                "harmonyio/php-codesniffer-ruleset": "^1.0.0-rc1",
+                "harmonyio/phpunit-extension": "^1.0.0-rc1",
+                "maglnet/composer-require-checker": "^1.1.0",
+                "phpunit/phpunit": "^7.5.1",
+                "slevomat/coding-standard": "^4.8.6",
+                "squizlabs/php_codesniffer": "^3.4.0"
             },
             "type": "library",
             "autoload": {
@@ -904,7 +906,7 @@
                 }
             ],
             "description": "Asynchronous caching library",
-            "time": "2018-12-03T09:49:30+00:00"
+            "time": "2018-12-28T00:41:06+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -1013,21 +1015,21 @@
         },
         {
             "name": "harmonyio/php-codesniffer-ruleset",
-            "version": "dev-master",
+            "version": "v1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/PHP-CodeSniffer-Ruleset.git",
-                "reference": "d3678daabd50b81e88cacda3053f1e22f61a0f1b"
+                "reference": "ae732ba33cd99d58440d206ca90bbd080809c3a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/PHP-CodeSniffer-Ruleset/zipball/d3678daabd50b81e88cacda3053f1e22f61a0f1b",
-                "reference": "d3678daabd50b81e88cacda3053f1e22f61a0f1b",
+                "url": "https://api.github.com/repos/HarmonyIO/PHP-CodeSniffer-Ruleset/zipball/ae732ba33cd99d58440d206ca90bbd080809c3a8",
+                "reference": "ae732ba33cd99d58440d206ca90bbd080809c3a8",
                 "shasum": ""
             },
             "require": {
-                "slevomat/coding-standard": "^4.8",
-                "squizlabs/php_codesniffer": "^3.3"
+                "slevomat/coding-standard": "^4.8.6",
+                "squizlabs/php_codesniffer": "^3.4.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -1040,33 +1042,33 @@
                     "email": "info@pieterhordijk.com"
                 }
             ],
-            "description": "HarmonyIO coding standard",
-            "time": "2018-11-19T19:25:34+00:00"
+            "description": "HarmonyIO coding standards",
+            "time": "2018-12-24T16:03:36+00:00"
         },
         {
             "name": "harmonyio/phpunit-extension",
-            "version": "v0.1.0",
+            "version": "v1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HarmonyIO/PHPUnit-Extension.git",
-                "reference": "9292b4ae3a100a50b85262fa5c77f2824117fbe5"
+                "reference": "9654c0b2ddd9fb86f00fce77d35d42eabe84d266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HarmonyIO/PHPUnit-Extension/zipball/9292b4ae3a100a50b85262fa5c77f2824117fbe5",
-                "reference": "9292b4ae3a100a50b85262fa5c77f2824117fbe5",
+                "url": "https://api.github.com/repos/HarmonyIO/PHPUnit-Extension/zipball/9654c0b2ddd9fb86f00fce77d35d42eabe84d266",
+                "reference": "9654c0b2ddd9fb86f00fce77d35d42eabe84d266",
                 "shasum": ""
             },
             "require": {
-                "amphp/amp": "^2.0",
-                "php": "^7.2"
+                "amphp/amp": "^2.1.1",
+                "php": "^7.3",
+                "phpunit/phpunit": "^7.5.1"
             },
             "require-dev": {
-                "harmonyio/php-codesniffer-ruleset": "dev-master",
-                "phpstan/phpstan": "^0.10.5",
-                "phpunit/phpunit": "^7.4",
-                "slevomat/coding-standard": "^4.8",
-                "squizlabs/php_codesniffer": "^3.3"
+                "harmonyio/php-codesniffer-ruleset": "1.0.0-rc1",
+                "maglnet/composer-require-checker": "^1.1.0",
+                "slevomat/coding-standard": "^4.8.6",
+                "squizlabs/php_codesniffer": "^3.4.0"
             },
             "type": "library",
             "autoload": {
@@ -1085,7 +1087,7 @@
                 }
             ],
             "description": "Asynchronous helpers for PHPUnit",
-            "time": "2018-11-07T02:17:55+00:00"
+            "time": "2018-12-24T18:07:04+00:00"
         },
         {
             "name": "maglnet/composer-require-checker",
@@ -1206,16 +1208,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
+                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1255,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-10-10T09:24:14+00:00"
+            "time": "2018-12-26T11:32:39+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2563,20 +2565,21 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.7",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "432122af37d8cd52fba1b294b11976e0d20df595"
+                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/432122af37d8cd52fba1b294b11976e0d20df595",
-                "reference": "432122af37d8cd52fba1b294b11976e0d20df595",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4dff24e5d01e713818805c1862d2e3f901ee7dd0",
+                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
+                "symfony/contracts": "^1.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
@@ -2600,7 +2603,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -2627,7 +2630,133 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-31T09:30:44+00:00"
+            "time": "2018-11-27T07:40:44+00:00"
+        },
+        {
+            "name": "symfony/contracts",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/contracts.git",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0",
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "psr/cache": "When using the Cache contracts",
+                "psr/container": "When using the Service contracts",
+                "symfony/cache-contracts-implementation": "",
+                "symfony/service-contracts-implementation": "",
+                "symfony/translation-contracts-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\": ""
+                },
+                "exclude-from-classmap": [
+                    "**/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A set of abstractions extracted out of the Symfony components",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2018-12-05T08:06:11+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2730,20 +2859,21 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -2776,7 +2906,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-12-25T11:19:39+00:00"
         },
         {
             "name": "webmozart/glob",
@@ -2874,14 +3004,11 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "harmonyio/cache": 20,
-        "harmonyio/php-codesniffer-ruleset": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2",
+        "php": "^7.3",
         "ext-json": "*"
     },
     "platform-dev": []
