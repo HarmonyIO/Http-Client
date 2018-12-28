@@ -51,25 +51,6 @@ matrix:
     - name: '[UNIT] PHP Nightly With Lowest Dependencies'
       php: nightly
       env: dependencies=lowest unit=1
-
-    - name: '[INTEGRATION] PHP 7.3 With Locked Dependencies'
-      php: '7.3'
-      env: integration=1
-    - name: '[INTEGRATION] PHP 7.3 With Lowest Dependencies'
-      php: '7.3'
-      env: dependencies=lowest integration=1
-    - name: '[INTEGRATION] PHP 7.3 With Highest Dependencies'
-      php: '7.3'
-      env: dependencies=highest integration=1
-    - name: '[INTEGRATION] PHP Nightly With Locked Dependencies'
-      php: nightly
-      env: integration=1
-    - name: '[INTEGRATION] PHP Nightly With Highest Dependencies'
-      php: nightly
-      env: dependencies=highest integration=1
-    - name: '[INTEGRATION] PHP Nightly With Lowest Dependencies'
-      php: nightly
-      env: dependencies=lowest integration=1
   allow_failures:
     - name: '[CS] PHP Nightly With Locked Dependencies'
       php: nightly
@@ -90,16 +71,6 @@ matrix:
     - name: '[UNIT] PHP Nightly With Lowest Dependencies'
       php: nightly
       env: dependencies=lowest unit=1
-
-    - name: '[INTEGRATION] PHP Nightly With Locked Dependencies'
-      php: nightly
-      env: integration=1
-    - name: '[INTEGRATION] PHP Nightly With Highest Dependencies'
-      php: nightly
-      env: dependencies=highest integration=1
-    - name: '[INTEGRATION] PHP Nightly With Lowest Dependencies'
-      php: nightly
-      env: dependencies=lowest integration=1
 
 services:
   - redis-server
