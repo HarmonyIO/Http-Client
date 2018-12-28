@@ -93,7 +93,7 @@ class Response implements CacheableResponse
      * @param string $serialized
      * @throws InvalidCachedResponse
      */
-    //phpcs:ignore SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
+    // phpcs:ignore SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
     public function unserialize($serialized): void
     {
         $cachedData = json_decode($serialized, true);

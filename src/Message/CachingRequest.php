@@ -4,6 +4,7 @@ namespace HarmonyIO\HttpClient\Message;
 
 use HarmonyIO\Cache\CacheableRequest;
 use HarmonyIO\Cache\Key;
+use HarmonyIO\Cache\Ttl;
 
 class CachingRequest extends Request implements CacheableRequest
 {
@@ -12,10 +13,10 @@ class CachingRequest extends Request implements CacheableRequest
     /** @var string */
     private $key;
 
-    /** @var int */
+    /** @var Ttl */
     private $ttl;
 
-    public function __construct(string $key, int $ttl, string $uri, string $method = 'GET')
+    public function __construct(string $key, Ttl $ttl, string $uri, string $method = 'GET')
     {
         $this->key = $key;
         $this->ttl = $ttl;
@@ -28,7 +29,7 @@ class CachingRequest extends Request implements CacheableRequest
         return new Key(self::CACHE_TYPE, $this->key, md5(serialize($this)));
     }
 
-    public function getTtl(): int
+    public function getTtl(): Ttl
     {
         return $this->ttl;
     }
