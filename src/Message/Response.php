@@ -17,7 +17,7 @@ class Response implements CacheableResponse
     /** @var string */
     private $textualStatusCode;
 
-    /** @var array<string, string[]> */
+    /** @var array<string, array<string>> */
     private $headers = [];
 
     /** @var string */
@@ -62,7 +62,7 @@ class Response implements CacheableResponse
     }
 
     /**
-     * @return string[]
+     * @return array<string>
      */
     public function getHeaderArray(string $key): array
     {

@@ -49,7 +49,7 @@ class ArtaxClient implements Client
                 yield $this->cache->store(new Item(
                     $request->getCachingKey(),
                     serialize($response),
-                    $request->getTtl()
+                    $request->getTtl(),
                 ));
             }
 

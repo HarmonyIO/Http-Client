@@ -19,7 +19,7 @@ class InvalidBodyTest extends TestCase
     {
         $this->expectException(InvalidBody::class);
         $this->expectExceptionMessage(
-            'Expected body to be of type string|Amp\Artax\RequestBody, but got DateTimeImmutable.'
+            'Expected body to be of type string|Amp\Artax\RequestBody, but got DateTimeImmutable.',
         );
 
         throw new InvalidBody(new \DateTimeImmutable());

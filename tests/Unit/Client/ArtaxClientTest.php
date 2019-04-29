@@ -27,8 +27,7 @@ class ArtaxClientTest extends TestCase
     /** @var MockObject|Cache */
     private $cache;
 
-    // phpcs:ignore SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint
-    public function setUp()
+    public function setUp(): void
     {
         $this->artaxBaseClient = $this->createMock(ArtaxBaseClient::class);
         $this->cache           = $this->createMock(Cache::class);

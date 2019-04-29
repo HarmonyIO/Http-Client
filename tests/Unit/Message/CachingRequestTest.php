@@ -14,7 +14,7 @@ class CachingRequestTest extends TestCase
     {
         $this->assertInstanceOf(
             CacheableRequest::class,
-            (new CachingRequest('TestKey', new Ttl(10), 'https://example.com'))
+            (new CachingRequest('TestKey', new Ttl(10), 'https://example.com')),
         );
     }
 
@@ -29,7 +29,7 @@ class CachingRequestTest extends TestCase
     {
         $this->assertSame(
             10,
-            (new CachingRequest('TestKey', new Ttl(10), 'https://example.com'))->getTtl()->getTtlInSeconds()
+            (new CachingRequest('TestKey', new Ttl(10), 'https://example.com'))->getTtl()->getTtlInSeconds(),
         );
     }
 }

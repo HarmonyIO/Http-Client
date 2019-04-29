@@ -106,7 +106,7 @@ class ResponseTest extends TestCase
     {
         $this->assertSame(
             require TEST_FIXTURE_DIR . '/Message/serialized-response.php',
-            serialize($this->response)
+            serialize($this->response),
         );
     }
 
